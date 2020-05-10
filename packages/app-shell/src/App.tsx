@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { Main, Button } from '@fedlight/common-components';
 import random from "lodash/random";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Main/>
-      <Button title="Kiran"/>
+      <Button title="Kiran" className="Rock"/>
     </div>
   );
 }
