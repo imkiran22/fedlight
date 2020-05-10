@@ -1,0 +1,7 @@
+node_modules
+tmp
+build
+packages/application-shell/public/VERSION
+packages/*/src/assets
+packages/application-shell/public/tracking/
+.idea

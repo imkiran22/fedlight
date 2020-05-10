@@ -1,0 +1,45 @@
+{
+  "name": "@fedlight/common-components",
+  "version": "1.0.0",
+  "description": "UI Kit",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Kiran",
+  "license": "NO",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -wc"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-react": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@rollup/plugin-commonjs": "11.0.1",
+    "@rollup/plugin-node-resolve": "7.0.0",
+    "@rollup/plugin-typescript": "2.1.0",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.3.2",
+    "@testing-library/user-event": "7.1.2",
+    "@types/jest": "24.0.0",
+    "@types/node": "12.0.0",
+    "@types/react": "16.9.0",
+    "@types/react-dom": "16.9.0",
+    "@types/styled-components": "^5.1.0",
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "rollup": "1.29.0",
+    "rollup-plugin-babel": "4.3.3",
+    "typescript": "^3.7.2"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.9.0"
+  }
+}
