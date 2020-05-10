@@ -6,6 +6,9 @@
   "typings": "dist/index.d.ts",
   "author": "Kiran",
   "license": "NO",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -wc"
@@ -41,5 +44,6 @@
   },
   "resolutions": {
     "@babel/preset-env": "7.9.0"
-  }
+  },
+  "gitHead": "ae64ef1aae07bc441da71525585feef1512b373d"
 }
