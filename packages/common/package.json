@@ -6,7 +6,6 @@
   "typings": "dist/index.d.ts",
   "author": "Kiran",
   "license": "NO",
-  "private": true,
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -wc"
