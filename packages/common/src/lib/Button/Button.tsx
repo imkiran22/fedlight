@@ -5,7 +5,7 @@ export interface Props {
   className: string;
 }
 export const Button: React.FC<Props> = ({ title, className}: Props) => {
-    const val = random(5000, 1).toString();
+    const val = random(10000, 1).toString();
     return (
       <button id={val} className={className}>{title}</button>
     )
