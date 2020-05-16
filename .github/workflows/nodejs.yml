@@ -27,4 +27,4 @@ jobs:
     - run: yarn cache clean
     - run: yarn install --frozen-lockfile
     - run: yarn lerna bootstrap
-    - run: yarn lerna exec -- yarn test --scope=app-shell
+    - run: yarn lerna run test --stream
