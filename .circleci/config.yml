@@ -7,11 +7,19 @@ jobs:
       name: node/default
     steps:
       - checkout
+      - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
       - node/with-cache:
           steps:
             - run: yarn install
             - run: yarn lerna bootstrap
             - run: yarn lerna exec -- yarn test --scope=app-shell
+      - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
 workflows:
     build-and-test:
       jobs:
