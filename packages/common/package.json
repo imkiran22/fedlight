@@ -1,6 +1,6 @@
 {
   "name": "@fedlight/common-components",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "UI Kit",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
