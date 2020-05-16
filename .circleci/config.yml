@@ -11,7 +11,7 @@ jobs:
           steps:
             - run: yarn install
             - run: yarn lerna bootstrap
-            - run: yarn run test
+            - run: yarn lerna exec -- yarn test --scope=app-shell
 workflows:
     build-and-test:
       jobs:
