@@ -12,5 +12,5 @@ export const Main: React.FC<Props> = () => {
     )
 }
 
-//EXPORT LIBRARY COMPONENTS IN BELOW FILES
+//EXPORT LIBRARY COMPONENTS IN BELOW FILE
 export * from './lib/components';
