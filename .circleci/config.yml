@@ -1,25 +1,31 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+
+yarn_cache: &yarn_cache
+  keys:
+    - node-deps-node12-{{ checksum "yarn.lock" }}
+    # fallback to using the latest cache if no exact match is found
+    - node-deps-node12-
+
+deploy_cache: &deploy_cache
+  key: last-deploy-sha
+
+yarn_install: &yarn_install
+  name: Install Dependencies
+  command: yarn install --frozen-lockfile --non-interactive
+
 jobs:
   build-and-test:
     executor:
       name: node/default
     steps:
       - checkout
-      - restore_cache:
-        keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
       - node/with-cache:
           steps:
             - run: yarn install
             - run: yarn lerna bootstrap
             - run: yarn lerna exec -- yarn test --scope=app-shell
-      - save_cache:
-        paths:
-          - node_modules
-        key: v1-dependencies-{{ checksum "package.json" }}
 workflows:
     build-and-test:
       jobs:
