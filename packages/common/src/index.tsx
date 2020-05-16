@@ -7,7 +7,7 @@ export const Main: React.FC<Props> = () => {
     const [count, setCount] = useState(0);
     return (
         <div>
-            <h1>{title}:: {count}</h1>
+            <h1>{title}</h1>
         </div>
     )
 }

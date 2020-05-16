@@ -1,6 +1,6 @@
 {
   "name": "@fedlight/common-components",
-  "version": "1.0.9",
+  "version": "1.0.13",
   "description": "UI Kit",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -18,7 +18,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "rollup-plugin-typescript2": "^0.27.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.8.3",
