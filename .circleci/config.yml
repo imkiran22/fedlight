@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: node:11.10.1
-    working_directory: ~/repo
   build-and-test:
     executor:
       name: node/default
@@ -14,7 +13,3 @@ jobs:
             - run: yarn install
             - run: yarn lerna bootstrap
             - run: yarn lerna exec -- yarn test --scope=app-shell
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
