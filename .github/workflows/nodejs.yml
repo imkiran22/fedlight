@@ -26,5 +26,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn cache clean
     - run: yarn install --frozen-lockfile
-    - run: yarn lerna bootstrap --hoist
+    - run: yarn lerna bootstrap --hoist --npm-client=yarn
     - run: yarn lerna run test --stream
