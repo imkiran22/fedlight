@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import { Main, Button } from '@fedlight/common-components';
 import random from "lodash/random";
