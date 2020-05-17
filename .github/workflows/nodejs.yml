@@ -27,5 +27,4 @@ jobs:
     - run: yarn cache clean
     - run: yarn install --frozen-lockfile
     - run: yarn lerna bootstrap
-    - run: yarn lerna add @fedlight/common-components --scope=app-shell
     - run: yarn lerna run test --stream
