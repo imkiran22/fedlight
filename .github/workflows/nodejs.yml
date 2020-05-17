@@ -24,9 +24,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn cache clean
     - run: yarn install --frozen-lockfile
-    - run: yarn lerna clean
-    - run: yarn lerna list 
-    - run: yarn lerna bootstrap
     - run: yarn lerna run test --stream
