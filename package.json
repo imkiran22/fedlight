@@ -6,7 +6,7 @@
   },
   "homepage": "https://imkiran22.github.io/fedlight",
   "scripts": {
-    "predeploy": "CI=false yarn lerna exec -- rimraf build dist && yarn lerna run build",
+    "predeploy": "CI=false yarn lerna exec -- rimraf build dist && CI=false yarn lerna run build",
     "deploy": "gh-pages -d ./packages/app-shell/build"
   },
   "workspaces": [
