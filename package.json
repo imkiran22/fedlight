@@ -4,7 +4,7 @@
   "devDependencies": {
     "lerna": "^3.21.0"
   },
-  "homepage": "https://imkiran22.github.io/fedlight",
+  "homepage": "https://imkiran22.github.io",
   "scripts": {
     "predeploy": "yarn lerna exec -- rimraf build dist && yarn lerna run build",
     "deploy": "gh-pages -d ./packages/app-shell/build"
