@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fedlight/precache-manifest.56709eb43004a609bfb723d044125bb2.js"
+  "/fedlight/precache-manifest.fb658f0e34bfafcceaef962a0599361f.js"
 );
 
 self.addEventListener('message', (event) => {
