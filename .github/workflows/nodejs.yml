@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
+    - run: CI=false yarn lerna link --force-local
     - run: CI=false yarn lerna run build
     - run: CI=false yarn lerna list
     - run: CI=false yarn lerna run test --stream

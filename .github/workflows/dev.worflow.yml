@@ -16,6 +16,7 @@ jobs:
         run: |
           yarn config set registry https://registry.yarnpkg.com
           yarn install
+          CI=false yarn lerna link --force-local
           yarn predeploy
 
       - name: Deploy 🚀
