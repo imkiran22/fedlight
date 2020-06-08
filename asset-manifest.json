@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fedlight/static/css/main.be08af94.chunk.css",
-    "main.js": "/fedlight/static/js/main.e12d6b74.chunk.js",
-    "main.js.map": "/fedlight/static/js/main.e12d6b74.chunk.js.map",
+    "main.js": "/fedlight/static/js/main.57f28e81.chunk.js",
+    "main.js.map": "/fedlight/static/js/main.57f28e81.chunk.js.map",
     "runtime-main.js": "/fedlight/static/js/runtime-main.d12fa747.js",
     "runtime-main.js.map": "/fedlight/static/js/runtime-main.d12fa747.js.map",
     "static/js/2.a39a8700.chunk.js": "/fedlight/static/js/2.a39a8700.chunk.js",
     "static/js/2.a39a8700.chunk.js.map": "/fedlight/static/js/2.a39a8700.chunk.js.map",
     "index.html": "/fedlight/index.html",
-    "precache-manifest.fb658f0e34bfafcceaef962a0599361f.js": "/fedlight/precache-manifest.fb658f0e34bfafcceaef962a0599361f.js",
+    "precache-manifest.78649943372d805f870814e3f5822dc1.js": "/fedlight/precache-manifest.78649943372d805f870814e3f5822dc1.js",
     "service-worker.js": "/fedlight/service-worker.js",
     "static/css/main.be08af94.chunk.css.map": "/fedlight/static/css/main.be08af94.chunk.css.map",
     "static/js/2.a39a8700.chunk.js.LICENSE.txt": "/fedlight/static/js/2.a39a8700.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d12fa747.js",
     "static/js/2.a39a8700.chunk.js",
     "static/css/main.be08af94.chunk.css",
-    "static/js/main.e12d6b74.chunk.js"
+    "static/js/main.57f28e81.chunk.js"
   ]
 }
